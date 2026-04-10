@@ -31,6 +31,14 @@ a file. In C, a source file without a final newline is not valid.
 This may not suit every repository or programming language, so remove
 it if you do not need it.
 
+## Dependabot
+
+https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configuring-dependabot-version-updates
+
+`.github/dependabot.yml` configures GitHub Dependabot. This template
+only defines updates for GitHub Actions. If you use other ecosystems
+such as Python, Node.js, Rust, or others, please customize it.
+
 ## .gitignore
 
 `.gitignore` specifies intentionally untracked files that Git should
