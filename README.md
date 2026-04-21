@@ -49,3 +49,34 @@ but you probably already know what to put here.
 
 `.editorconfig` defines basic coding style settings for the project.
 Many editors, such as Emacs, Vim, and Visual Studio Code, support it.
+
+## CODEOWNERS
+
+https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+This template includes a `CODEOWNERS` file as a starting point.
+
+When you create a new repository from this template, review the copied
+`CODEOWNERS` file and replace the example entries with the actual
+maintainers for that repository.
+
+After updating the file, remove any unused comments and example lines.
+Keep the file as simple as possible so that it reflects the actual
+ownership rules for the repository.
+
+`CODEOWNERS` entries consist of a path pattern followed by one or more
+owners. Owners can be GitHub usernames or Space Cubics teams.
+
+Example:
+
+```text
+*                      @yashi
+/src/                  @spacecubics/software
+/fpga/                 @spacecubics/fpga
+```
+
+Notes:
+
+- Owners must have write access to the repository.
+- Teams must be visible in the organization and have write access to the repository.
+- If you want multiple owners for the same pattern, put them on the same line.
