@@ -1,9 +1,7 @@
 autofix: false
-
 ignore:
   - /.git
   - "*.svg"
-
 rules:
   end-of-file:
     enable: true
