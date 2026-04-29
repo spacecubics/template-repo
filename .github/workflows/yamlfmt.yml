@@ -1,0 +1,23 @@
+name: yamlfmt
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.yml'
+      - '**/*.yaml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '**/*.yml'
+      - '**/*.yaml'
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check YAML format
+        uses: docker://ghcr.io/google/yamlfmt:latest
+        with:
+          args: -lint .
