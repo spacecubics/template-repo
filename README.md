@@ -31,6 +31,15 @@ a file. In C, a source file without a final newline is not valid.
 This may not suit every repository or programming language, so remove
 it if you do not need it.
 
+## yamlfmt
+
+https://github.com/google/yamlfmt
+
+yamlfmt is a formatter for YAML files. This template includes a GitHub
+Actions workflow at `.github/workflows/yamlfmt.yml` that runs
+`yamlfmt -lint .` for pushes and pull requests targeting `main` when
+YAML files change.
+
 ## Dependabot
 
 https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/configuring-dependabot-version-updates
