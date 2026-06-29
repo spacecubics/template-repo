@@ -2,4 +2,4 @@
 regex-style-search=true
 
 [ignore-body-lines]
-regex=^(?:(?:Signed-off|Acked|Co-Authored|Reported|Tested)-by: |\[\d+\]: https:\/\/)
+regex=^(?:(?:Signed-off|Acked|Co-Authored|Reported|Tested|Assisted)-by: |\[\d+\]: https:\/\/)
